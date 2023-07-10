@@ -19,6 +19,6 @@ from django.urls import re_path, include
 
 urlpatterns = [
     re_path('admin/', admin.site.urls),
-    re_path('api-imagedetection/', include('imagedetection.api.urls')),
+    # re_path('api-imagedetection/', include('imagedetection.api.urls')),
     re_path('api-traceability/', include('traceability.api.urls')),
 ]
