@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     'imagedetection',
     'traceability',
+    'analytics',
     'rest_framework',
     'corsheaders',
 ]
