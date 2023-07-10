@@ -51,11 +51,11 @@ class ScannerDataSerilisersAPIView(
 
     def post(self, request, *args, **kwargs):
         serializer = ScannerDataDataSerialisersv1(data=request.data)
-        if serializer.is_valid():
-            self.post_server(
-                serializer.data['shell_no'], 
-                serializer.data['cast_code'], 
-                serializer.data['heat_code'], 
-                serializer.data['shell_serial_no'], 
-                serializer.data['location'])
+        # if serializer.is_valid():
+        #     self.post_server(
+        #         serializer.data['shell_no'], 
+        #         serializer.data['cast_code'], 
+        #         serializer.data['heat_code'], 
+        #         serializer.data['shell_serial_no'], 
+        #         serializer.data['location'])
         return self.create(request, *args, **kwargs)
