@@ -4,7 +4,7 @@ from .serializers import Serial_DetectionSerializers
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-import cv2
+import opencv
 import numpy as np
 import time
 import os
