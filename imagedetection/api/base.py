@@ -97,14 +97,14 @@ class Serial_DetectionAPIView():
             #     2
             # )
 
-        crop_path = r"C:\Users\mmaleka\Desktop\data"
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        current_date = now.strftime("%B %d, %Y")
-        img_name = str(current_date).replace(" ", "_").replace(",", "_") + str(current_time).replace(":", "-").replace(" ", "_")+'.jpg'
-        print("img_name: ", img_name)
-        img_path = os.path.join(crop_path, img_name)
-        cv2.imwrite(img_path, original_image)
+        # crop_path = r"C:\Users\mmaleka\Desktop\data"
+        # now = datetime.now()
+        # current_time = now.strftime("%H:%M:%S")
+        # current_date = now.strftime("%B %d, %Y")
+        # img_name = str(current_date).replace(" ", "_").replace(",", "_") + str(current_time).replace(":", "-").replace(" ", "_")+'.jpg'
+        # print("img_name: ", img_name)
+        # img_path = os.path.join(crop_path, img_name)
+        # cv2.imwrite(img_path, original_image)
 
         print("box - process is complete...: ", time.time()-start_time1)
         scores_list=[]
