@@ -1,4 +1,4 @@
-from django.urls import re_path
+from django.urls import re_path, path
 from . import views
 from django.contrib.auth.decorators import login_required
 
@@ -18,7 +18,7 @@ urlpatterns = [
           views.ScannerDataSerilisersAPIView.as_view(),
           name='ScannerDataSerilisersAPIView'),
 
-     re_path('ScannerDataSerilisersDetail/<int:id>/',
+     path('ScannerDataSerilisersDetail/<int:id>/',
           views.ScannerDataSerilisersDetail.as_view(),
           name='ScannerDataSerilisersDetail'),
     
