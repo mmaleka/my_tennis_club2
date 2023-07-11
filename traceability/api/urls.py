@@ -17,6 +17,10 @@ urlpatterns = [
      re_path('ScannerDataSerilisersAPIView',
           views.ScannerDataSerilisersAPIView.as_view(),
           name='ScannerDataSerilisersAPIView'),
+
+     re_path('ScannerDataSerilisersDetail/<int:id>/',
+          views.ScannerDataSerilisersDetail.as_view(),
+          name='ScannerDataSerilisersDetail'),
     
 ]
 
