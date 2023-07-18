@@ -3,5 +3,6 @@ libxrender1
 libfontconfig1
 libice6
 libopencv-dev
+python3-opencv
 ffmpeg
 libxext6  
