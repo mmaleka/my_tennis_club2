@@ -4,6 +4,7 @@ from django.db import models
 class pingservor(models.Model):
     
     ping_server = models.CharField(max_length=7, blank=True, default='')
+    # ping_server_quality = models.CharField(max_length=7, blank=True, default='')
     created = models.DateTimeField(auto_now_add=True)
 
 
